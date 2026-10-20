@@ -1,12 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    projeto django
-</body>
-</html>
+{% extends 'projectus/_base.html' %}
+
+{% block content %}
+
+<h2>Posts Recentes</h2>
+
+{% for post in posts %}
+
+<div>
+    <img src="{{ post.thumbnail }}" alt="{{ post.title }}">
+    <h4><a href="{{ post.id }}">{{ post.title }}</a></h4>
+    <p>{{ post.summary }}</p>
+</div>
+
+{% endfor %}
+
+{% endblock %}
