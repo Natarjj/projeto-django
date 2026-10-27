@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{% static 'projectus/css/style.css' %}">
     <title>{{ tag_title | default:'ProjectUs' }}</title>
 </head>
 
@@ -13,22 +14,26 @@
 
         <header>
             <a href="{% url 'home' %}">
-                <h1 class="titulo">ProjectUs</h1>
+             <h1>ProjectUs</h1>
             </a>
         </header>
 
         <nav>
-            <a href="{% url 'home' %}">Início</a> ||
-
+          <ul>
+            <li><a href="{% url 'home' %}">Início</a></li>
+       
             {% if user.is_authenticated %}
-            Olá, <a href="{% url 'profile' %}" title="Ver/editar perfil de {{ user.username}}">{{ user.username }}</a>! |
+
+          Olá,<a href=" {% url 'profile' %}" title="Ver/editar perfil de {{ user.username}}">{{ user.username }}</a>!
             <form method="POST" action="{% url 'logout' %}" style="display: inline;">
                 {% csrf_token %}
-                <button type="submit">Sair</button>
+               <li> <button type="submit">Sair</button></li>
             </form>
             {% else %}
-            <a href="{% url 'login' %}">Entrar</a>
+            <li><a href="{% url 'login' %}">Entrar</a></li>
             {% endif %}
+
+         </ul>
         </nav>
 
         <main>

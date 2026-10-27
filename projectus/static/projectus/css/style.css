@@ -1,0 +1,648 @@
+
+/* Cabeçalho ProjectUs */
+body {
+ 
+}
+header {
+    background-color: #111827;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #923434;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Link do cabeçalho */
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Título ProjectUs */
+header h1 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+header a:hover h1 {
+    color: #c45b5b;
+}
+
+/* Responsividade para celular */
+@media (max-width: 600px) {
+    header {
+        padding: 16px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+}
+
+
+/* ===== NAVEGAÇÃO PROJECTUS ===== */
+
+nav {
+    background-color: #1f2937;
+    padding: 15px 24px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    border-bottom: 1px solid #374151;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    color: #d1d5db;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Itens do menu */
+nav li {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li:first-child {
+  margin-right: 1rem;
+}
+/* Links */
+nav a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #e5a0a0;
+}
+
+/* Página ativa */
+nav a.active {
+    color: #ffffff;
+    font-weight: 600;
+    border-bottom: 2px solid #923434;
+    padding-bottom: 5px;
+}
+
+/* Nome do usuário */
+nav a[title] {
+    color: #ffffff;
+    font-weight: 600;
+    margin-left: 3px;
+}
+
+nav a[title]:hover {
+    color: #e5a0a0;
+}
+
+/* Formulário de sair */
+nav form {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Botão Sair */
+nav button {
+    background-color: #923434;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: background-coor 0.2s ease;
+}
+
+nav button:hover {
+    background-color: #762929;
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    nav {
+        padding: 12px 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+}
+
+
+/* ===== FOOTER PROJECTUS ===== */
+
+footer {
+    background-color: #050505;
+    color: #a3a3a3;
+
+    padding: 25px 20px;
+    margin-top: auto;
+
+    text-align: center;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+
+    border-top: 2px solid #b91c1c;
+    box-shadow: 0 -4px 15px rgba(185, 28, 28, 0.08);
+}
+
+/* Texto do rodapé */
+footer p,
+footer div {
+    margin: 0;
+    line-height: 1.8;
+}
+
+/* Nome ProjectUs */
+footer strong {
+    color: #ef4444;
+    font-weight: 700;
+}
+
+/* Links */
+footer a {
+    color: #dc2626;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    footer {
+        padding: 20px 12px;
+        font-size: 12px;
+    }
+}
+
+/* ===== SEPARAÇÕES ===== */
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #b91c1c,
+        #ef4444,
+        #b91c1c,
+        transparent
+    );
+    margin: 25px 0;
+    opacity: 0.85;
+}
+
+/* Separação entre o cabeçalho e o conteúdo */
+header {
+    border-bottom: 2px solid #b91c1c;
+    box-shadow: 0 3px 10px rgba(185, 28, 28, 0.15);
+}
+
+/* Separação entre o menu e o conteúdo */
+nav {
+    border-bottom: 1px solid #7f1d1d;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Separação do conteúdo principal */
+main {
+    border-bottom: 1px solid #7f1d1d;
+    padding: 25px 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #050505;
+    border-top: 2px solid #b91c1c;
+    color: #d1d5db;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 -3px 12px rgba(185, 28, 28, 0.12);
+}
+
+/* Destaque do texto do rodapé */
+footer div {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* Separação dos artigos e conteúdos laterais */
+article,
+aside {
+    border: 1px solid #292929;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #0b0b0b;
+}
+
+/* Linha vermelha ao passar o mouse nos artigos */
+article:hover,
+aside:hover {
+    border-color: #7f1d1d;
+    transition: border-color 0.3s ease;
+}
+
+/* ===== HOME - PROJECTUS ===== */
+
+main h2 {
+    color: #ef4444;
+    font-size: 28px;
+    margin-bottom: 10px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #b91c1c;
+}
+
+main > p {
+    color: #a1a1aa;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Cartões dos posts */
+main > div {
+    background: #0b0b0b;
+    border: 1px solid #292929;
+    border-left: 3px solid #b91c1c;
+    border-radius: 8px;
+    padding: 18px;
+    margin: 20px 0;
+    overflow: hidden;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+main > div:hover {
+    border-color: #ef4444;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 18px rgba(185, 28, 28, 0.12);
+}
+
+/* Imagens dos posts */
+main > div img {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    background: #171717;
+}
+
+/* Título do post */
+main > div h4 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+main > div h4 a {
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+main > div h4 a:hover {
+    color: #ef4444;
+}
+
+/* Resumo do post */
+main > div p {
+    color: #b3b3b3;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 5px;
+}
+
+/* Separadores */
+main hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #7f1d1d,
+        #ef4444,
+        #7f1d1d,
+        transparent
+    );
+    margin: 22px 0;
+}
+
+/* Mensagem quando não existem posts */
+main > p:last-child {
+    color: #a1a1aa;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    main {
+        padding: 18px 12px;
+    }
+
+    main h2 {
+        font-size: 23px;
+    }
+
+    main > div {
+        padding: 14px;
+    }
+
+    main > div img {
+        max-width: 100%;
+        height: 190px;
+    }
+
+    main > div h4 {
+        font-size: 18px;
+    }
+}
+
+/* ===== PÁGINA DO POST ===== */
+
+article {
+    background-color: #0b0b0b;
+    border: 1px solid #292929;
+    border-top: 3px solid #b91c1c;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 35px;
+    color: #e5e5e5;
+}
+
+/* Título do post */
+article h2 {
+    color: #f5f5f5;
+    font-size: 30px;
+    line-height: 1.4;
+    margin: 0 0 12px;
+}
+
+/* Autor e data */
+article small {
+    display: block;
+    color: #a1a1aa;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+/* Imagem principal */
+article > p img {
+    display: block;
+    width: 100%;
+    max-height: 480px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #050505;
+}
+
+/* Texto do artigo */
+article > div {
+    color: #d4d4d4;
+    font-size: 16px;
+    line-height: 1.9;
+    overflow-wrap: anywhere;
+}
+
+/* Separadores */
+article hr,
+aside hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #7f1d1d,
+        #ef4444,
+        #7f1d1d,
+        transparent
+    );
+    margin: 28px 0;
+}
+
+/* ===== TÍTULOS DE SEÇÃO ===== */
+
+article h3,
+aside h3 {
+    color: #ef4444;
+    font-size: 22px;
+    margin: 25px 0 18px;
+}
+
+/* ===== FORMULÁRIO DE COMENTÁRIO ===== */
+
+article form {
+    background-color: #111111;
+    border: 1px solid #292929;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+article form p {
+    margin-bottom: 16px;
+}
+
+article form label {
+    display: block;
+    color: #d4d4d4;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+article form input,
+article form textarea,
+article form select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    color: #f5f5f5;
+    background-color: #080808;
+    border: 1px solid #404040;
+    border-radius: 6px;
+    outline: none;
+    font: inherit;
+}
+
+article form textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+article form input:focus,
+article form textarea:focus,
+article form select:focus {
+    border-color: #dc2626;
+    box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.15);
+}
+
+/* Botão de enviar */
+article form button {
+    background-color: #b91c1c;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 11px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+article form button:hover {
+    background-color: #dc2626;
+}
+
+/* Link para entrar */
+article > p a {
+    color: #ef4444;
+    text-decoration: none;
+}
+
+article > p a:hover {
+    color: #fca5a5;
+    text-decoration: underline;
+}
+
+/* ===== COMENTÁRIOS ===== */
+
+article > p strong {
+    color: #f87171;
+}
+
+article > p {
+    line-height: 1.7;
+}
+
+/* ===== ARTIGOS RELACIONADOS ===== */
+
+aside {
+    background-color: #080808;
+    border: 1px solid #292929;
+    border-top: 2px solid #7f1d1d;
+    border-radius: 10px;
+    padding: 22px;
+    margin-bottom: 30px;
+}
+
+aside > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background-color: #101010;
+    border: 1px solid #292929;
+    border-radius: 8px;
+    padding: 14px;
+    margin: 18px 0;
+    transition: border-color 0.3s ease;
+}
+
+aside > div:hover {
+    border-color: #b91c1c;
+}
+
+aside > div img {
+    width: 130px;
+    min-width: 130px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+aside > div h4 {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+aside > div h4 a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+aside > div h4 a:hover {
+    color: #ef4444;
+}
+
+aside > div p {
+    color: #a3a3a3;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+@media (max-width: 600px) {
+    article,
+    aside {
+        padding: 15px;
+    }
+
+    article h2 {
+        font-size: 24px;
+    }
+
+    article > div {
+        font-size: 15px;
+    }
+
+    article > p img {
+        max-height: 300px;
+    }
+
+    article form {
+        padding: 14px;
+    }
+
+    aside > div {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    aside > div img {
+        width: 95px;
+        min-width: 95px;
+        height: 75px;
+    }
+
+    aside > div h4 {
+        font-size: 14px;
+    }
+
+    aside > div p {
+        font-size: 12px;
+    }
+}
